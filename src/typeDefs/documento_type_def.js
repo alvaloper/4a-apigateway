@@ -6,7 +6,7 @@ const documentoTypeDef = gql `
         tipodocumento: String!
     }
 
-    type Query {
+    extend type Query {
         documentoById(id: String!): Documento
     }
 `;

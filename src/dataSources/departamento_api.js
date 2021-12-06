@@ -1,5 +1,5 @@
-const { RESTDataSource } = require('apollo-datasource-rest')
-const serverConfig = require("../server");
+const { RESTDataSource } = require('apollo-datasource-rest'); 
+const serverConfig = require('../server');
 
 class DepartamentoAPI extends RESTDataSource {
 
@@ -9,8 +9,8 @@ class DepartamentoAPI extends RESTDataSource {
     }
 
     async departamentoById(id_departamento){
-        return await this.get(`/departamento/${id_departamento}`);
+        return await this.get(`/api/departamento/${id_departamento}`);
     }
-}
+};
 
 module.exports = DepartamentoAPI;

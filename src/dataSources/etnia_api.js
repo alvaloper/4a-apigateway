@@ -11,6 +11,6 @@ class EtniaAPI extends RESTDataSource {
     async etniaById(id_etnia){
         return await this.get(`/etnia/${id_etnia}`);
     }
-}
+};
 
 module.exports = EtniaAPI;

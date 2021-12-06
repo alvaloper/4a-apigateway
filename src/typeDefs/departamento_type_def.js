@@ -6,7 +6,7 @@ const departamentoTypeDef = gql `
         departamento: String!
     }
 
-    type Query {
+    extend type Query {
         departamentoById(id_departamento: String!): Departamento
     }
 `;

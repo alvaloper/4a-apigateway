@@ -11,6 +11,6 @@ class MunicipioAPI extends RESTDataSource {
     async municipioById(id_municipio){
         return await this.get(`/municipio/${id_municipio}`);
     }
-}
+};
 
 module.exports = MunicipioAPI;
